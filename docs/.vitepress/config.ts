@@ -8,7 +8,7 @@ const APP_BASE_PATH = basename('')
 
 export default defineConfig({
   sitemap: {
-    hostname: 'https://www.yizhan.wiki'
+    hostname: 'https://www.8aka.org'
   },
 
 
