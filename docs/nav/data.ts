@@ -10,7 +10,7 @@ export const NAV_DATA: NavData[] = [
     title: '项目仓库',
     items: [
       {
-        icon: 'https://yizhan.wiki/NitWikit/img/book.png',
+        icon: 'https://nitwikit.8aka.org/img/book.png',
         title: 'NitWikit',
         desc: '一群笨蛋们编写的开服教程',
         link: 'https://github.com/postyizhan/NitWikit',

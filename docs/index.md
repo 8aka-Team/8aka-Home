@@ -22,12 +22,12 @@ features:
   - icon: 📖
     title: NitWikit
     details: 由一群笨蛋们编写的开服教程
-    link: https://yizhan.wiki/NitWikit
+    link: https://nitwikit.8aka.org
     linkText: 点击查阅
   - icon: 📘
     title: lezi-wiki
     details: 集百处之乐，成一家之言
-    link: https://yizhan.wiki/lezi-wiki/
+    link: https://lezi.8aka.org
     linkText: 乐子文档
   - icon: 💡
     title: MineBBS上的驿站
