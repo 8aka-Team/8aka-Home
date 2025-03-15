@@ -1,1 +1,0 @@
-import{_ as a,c as e,o as t,a9 as r}from"./chunks/framework.D0swpzpd.js";const m=JSON.parse('{"title":"QQ","description":"","frontmatter":{},"headers":[],"relativePath":"qq.md","filePath":"qq.md","lastUpdated":1741437336000}'),o={name:"qq.md"},n=r("",11),s=[n];function i(h,l,q,c,d,p){return t(),e("div",null,s)}const f=a(o,[["render",i]]);export{m as __pageData,f as default};
