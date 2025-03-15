@@ -19,3 +19,8 @@
 [185839426](https://qm.qq.com/q/lBtTpiRnNK)
 
 <img src="https://img.fastmirror.net/s/2024/08/06/66b1e9d341daa.png" width="200;" alt=""/>
+
+#### Discord
+
+- [![](https://img.shields.io/discord/1342805340839870514?style=flat&logo=discord&label=Discord
+)](https://discord.gg/dAmsfCs3) <-点击加入
