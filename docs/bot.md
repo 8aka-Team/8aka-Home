@@ -27,8 +27,7 @@ https://dialogue.koishi.chat
 ## 撤回消息
 
 ```text
-recall         # 艾特一条消息，令机器人撤回此消息
-recall <count> # 机器人自行撤回 N 条消息
+delmsg         # 艾特一条消息，令机器人撤回此消息
 ```
 
 ## 禁言
