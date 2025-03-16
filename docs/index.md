@@ -25,10 +25,10 @@ features:
     link: https://nitwikit.8aka.org
     linkText: 点击查阅
   - icon: 📘
-    title: lezi-wiki
-    details: 集百处之乐，成一家之言
-    link: https://lezi.8aka.org
-    linkText: 乐子文档
+    title: Invero
+    details: Invero 插件文档
+    link: https://invero.8aka.org
+    linkText: 点击查阅
   - icon: 💡
     title: MineBBS上的驿站
     details: 看看驿站在 MineBBS 发过什么资源
@@ -36,7 +36,7 @@ features:
     linkText: 此处前往
   - icon: 🧰
     title: 导航页面
-    details: 收集常用的地址，工具，网站
+    details: 收集 8aka-Team 的所有项目
     link: /nav/
     linkText: 让我康康
 ---
