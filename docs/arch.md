@@ -143,14 +143,6 @@ XMODIFIERS=@im=fcitx
 SDL_IM_MODULE=fcitx
 ```
 
-### clash-verge
-
-梯子
-
-```
-yay -S clash-verge-rev-bin
-```
-
 ### zsh
 
 ```
@@ -184,6 +176,40 @@ sudo pacman -S zsh-autosuggestions zsh-syntax-highlighting
 
 - zsh-autosuggestions 自动建议插件
 - zsh-syntax-highlighting 代码高亮插件
+
+刷新配置
+
+```
+source ~/.zshrc
+```
+
+### clash-verge
+
+梯子
+
+```
+yay -S clash-verge-rev-bin
+```
+
+配置在终端中快速启用代理
+
+```bash
+cat >> ~/.zshrc << EOF
+
+# Proxy 设置
+proxy_on() {
+    export http_proxy="http://127.0.0.1:7890"
+    export https_proxy="http://127.0.0.1:7890"
+    echo "Proxy ON"
+}
+proxy_off() {
+    unset http_proxy https_proxy
+    echo "Proxy OFF"
+}
+alias pon="proxy_on"   # 短别名启用
+alias poff="proxy_off" # 短别名关闭
+EOF
+```
 
 刷新配置
 
