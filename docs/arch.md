@@ -281,6 +281,14 @@ sudo pacman -S wine
 sudo pacman -S steam
 ```
 
+### WindTerm
+
+我常用的 ssh 工具
+
+```
+yay -S windterm-bin
+```
+
 ## 多系统
 
 ### 引导
