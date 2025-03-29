@@ -132,21 +132,20 @@ sudo pacman -S fcitx5-im fcitx5-chinese-addons fcitx5-pinyin-zhwiki
 
 添加环境变量
 ```
-sudo vim sudoedit /etc/environment
+sudo vim /etc/environment
 ```
 
 写入内容：
 ```
-GTK_IM_MODULE=fcitx
-QT_IM_MODULE=fcitx
 XMODIFIERS=@im=fcitx
-SDL_IM_MODULE=fcitx
 ```
+
+![](/others/arch/fcitx5-wayland.png)
 
 ### zsh
 
 ```
-sudo pacman -Ss zsh oh-my-zsh-git
+sudo pacman -S zsh oh-my-zsh-git
 ```
 
 更改 shell 为 zsh
@@ -262,7 +261,7 @@ yay -S zulu-8-bin zulu-21-bin
 先安装 [Java](#java)
 
 ```
-sudo yay -S hmcl-dev-bin
+yay -S hmcl-dev-bin
 ```
 
 ### TimeShift
