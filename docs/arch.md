@@ -51,13 +51,13 @@ sudo vim /etc/pacman.d/mirrorlist
 
 在文件的最顶端添加：
 
-```text
+```
 Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch
 ```
 
 最后 :wq 保存退出，刷新 pacman 数据库
 
-```text
+```
 sudo pacman -Syyu
 ```
 
@@ -79,20 +79,20 @@ sudo vim /etc/pacman.conf
 
 最后 :wq 保存退出，刷新 pacman 数据库
 
-```text
+```
 sudo pacman -Syyu
 ```
 
 #### 添加 archlinuxcn 库
 
-```text
+```
 [archlinuxcn]
 Server = https://mirrors.aliyun.com/archlinuxcn/$arch
 ```
 
 :wq 保存退出，刷新 pacman 数据库
 
-```text
+```
 sudo pacman -Syyu
 ```
 
@@ -102,7 +102,7 @@ sudo pacman -Syyu
 
 接着
 
-```text
+```
 sudo pacman -S yay
 ```
 
@@ -112,7 +112,7 @@ sudo pacman -S yay
 
 在执行
 
-```text
+```
 sudo pacman -S archlinuxcn-keyring
 ```
 
@@ -122,7 +122,7 @@ sudo pacman -S archlinuxcn-keyring
 
 安装 fcitx5 输入法
 
-```text
+```
 sudo pacman -S fcitx5-im fcitx5-chinese-addons fcitx5-pinyin-zhwiki
 ```
 
@@ -131,12 +131,12 @@ sudo pacman -S fcitx5-im fcitx5-chinese-addons fcitx5-pinyin-zhwiki
 - fcitx5-pinyin-zhwiki #中文维基百科词库
 
 添加环境变量
-```text
+```
 sudo vim sudoedit /etc/environment
 ```
 
 写入内容：
-```text
+```
 GTK_IM_MODULE=fcitx
 QT_IM_MODULE=fcitx
 XMODIFIERS=@im=fcitx
@@ -147,19 +147,19 @@ SDL_IM_MODULE=fcitx
 
 梯子
 
-```text
+```
 yay -S clash-verge-rev-bin
 ```
 
 ### zsh
 
-```text
+```
 sudo pacman -Ss zsh oh-my-zsh-git
 ```
 
 更改 shell 为 zsh
 
-```text
+```
 chsh -s /usr/bin/zsh
 ```
 
@@ -170,7 +170,7 @@ cp /usr/share/oh-my-zsh/zshrc ~/.zshrc
 ```
 
 换个主题 找到：
-```text
+```
 ZSH_THEME="xxx"
 ```
 
@@ -178,7 +178,7 @@ ZSH_THEME="xxx"
 
 再装两个插件
 
-```text
+```
 sudo pacman -S zsh-autosuggestions zsh-syntax-highlighting
 ```
 
@@ -187,7 +187,7 @@ sudo pacman -S zsh-autosuggestions zsh-syntax-highlighting
 
 刷新配置
 
-```text
+```
 source ~/.zshrc
 ```
 
@@ -195,22 +195,22 @@ source ~/.zshrc
 
 火狐浏览器
 
-```text
+```
 sudo pacman -S firefox firefox-i18n-zh-cn
 ```
 
 - firefox # 本体
-- firefox-i18n-zh-cn #firefox 中文汉化包
+- firefox-i18n-zh-cn # firefox 中文汉化包
 
 ### vscode
 
-```text
+```
 yay -S visual-studio-code-bin
 ```
 
 ### LinuxQQ
 
-```text
+```
 yay -S linuxqq liteloader-qqnt-bin
 ```
 
@@ -227,7 +227,7 @@ sudo chmod -R 755 /opt/LiteLoaderQQNT
 
 ### Java
 
-```text
+```
 yay -S zulu-8-bin zulu-21-bin
 ```
 
@@ -235,7 +235,7 @@ yay -S zulu-8-bin zulu-21-bin
 
 先安装 [Java](#java)
 
-``` text
+```
 sudo yay -S hmcl-dev-bin
 ```
 
@@ -253,7 +253,7 @@ sudo pacman -S timeshift
 
 ![](/others/arch/6.png)
 
-```text
+```
 sudo pacman -S neofetch
 ```
 
@@ -301,13 +301,13 @@ yay -S windterm-bin
 
 安装 [os-prober](https://archlinux.org/packages/extra/x86_64/os-prober/)
 
-```text
+```
 sudo pacman -S os-prober
 ```
 
 接下来运行它
 
-```text
+```
 sudo os-prober
 ```
 
@@ -315,13 +315,13 @@ sudo os-prober
 
 编辑 Grub 的配置文件，找到 `GRUB_DISABLE_OS_PROBER` 取消注释（即设置为false）
 
-```text
+```
 sudo vim /etc/default/grub
 ```
 
 然后生成 Grub 所需的配置文件
 
-```text
+```
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
@@ -335,13 +335,13 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 
 ArchLinux 下执行：
 
-```text
+```
 timedatectl set-local-rtc 0
 ```
 
 Windows 管理员权限下执行：
 
-```text
+```
 reg add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\TimeZoneInformation" /v RealTimeIsUniversal /d 1 /t REG_DWORD /f
 ```
 
@@ -363,7 +363,7 @@ reg add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\TimeZoneInformation
 
 查看挂载硬盘的 UUID
 
-```text
+```
 lsblk -o name,mountpoint,size,uuid
 ```
 
@@ -371,19 +371,19 @@ lsblk -o name,mountpoint,size,uuid
 
 我想挂载的硬盘是 ntfs 类型，所以先装驱动
 
-```text
+```
 sudo pacman -S ntfs-3g
 ```
 
 然后编辑
 
-```text
+```
 sudo vim /etc/fstab
 ```
 
 在末尾添加
 
-```text
+```
 UUID=C60E69810E696B7F         /home/postyizhan/Disk ntfs  defaults 0 0
 ```
 
@@ -409,7 +409,7 @@ UUID=C60E69810E696B7F         /home/postyizhan/Disk ntfs  defaults 0 0
 
 挂件依次是：
 
-```text
+```
 应用程序启动器 虚拟桌面切换器 面板间隙 数字时钟 面板间隙 系统托盘
 ```
 
