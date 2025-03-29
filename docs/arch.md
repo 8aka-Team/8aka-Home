@@ -140,6 +140,8 @@ sudo vim /etc/environment
 XMODIFIERS=@im=fcitx
 ```
 
+在系统设置里启用，然后重启电脑
+
 ![](/others/arch/fcitx5-wayland.png)
 
 ### zsh
