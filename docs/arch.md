@@ -315,6 +315,14 @@ sudo pacman -S steam
 yay -S windterm-bin
 ```
 
+### Remmina
+
+远程桌面客户端，支持多种协议（如 RDP、VNC、SSH）
+
+```
+sudo pacman -S remmina
+```
+
 ## 多系统
 
 ### 引导
