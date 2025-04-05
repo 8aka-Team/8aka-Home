@@ -199,8 +199,8 @@ cat >> ~/.zshrc << EOF
 
 # Proxy 设置
 proxy_on() {
-    export http_proxy="http://127.0.0.1:7890"
-    export https_proxy="http://127.0.0.1:7890"
+    export http_proxy="http://127.0.0.1:7897"
+    export https_proxy="http://127.0.0.1:7897"
     echo "Proxy ON"
 }
 proxy_off() {
@@ -216,6 +216,24 @@ EOF
 
 ```
 source ~/.zshrc
+```
+
+先执行这些命令
+
+```
+gsettings set org.gnome.system.proxy mode manual
+gsettings set org.gnome.system.proxy.http host localhost
+gsettings set org.gnome.system.proxy.http port 7897
+gsettings set org.gnome.system.proxy.https host localhost
+gsettings set org.gnome.system.proxy.https port 7897
+gsettings set org.gnome.system.proxy.socks host localhost
+gsettings set org.gnome.system.proxy.socks port 7897
+```
+
+检查修改结果：
+
+```
+gsettings list-recursively | grep proxy
 ```
 
 ### firefox
