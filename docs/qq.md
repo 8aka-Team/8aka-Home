@@ -23,4 +23,4 @@
 #### Discord
 
 - [![](https://img.shields.io/discord/1342805340839870514?style=flat&logo=discord&label=Discord
-)](https://discord.gg/dAmsfCs3) <-点击加入
+)](https://discord.gg/KTbkv9B8) <-点击加入
