@@ -2,7 +2,9 @@
 
 #### Invero 交流群
 
-如果不是因为 Invero 而了解到我，请加入 [驿站的Q群](#驿站的q群)
+如果不是因为 Invero 而了解到我，~~请加入 [驿站的Q群](#驿站的q群)~~
+
+被临时停用了，请先加 Invero 群
 
 [489868834](https://qm.qq.com/q/lWWQvFItlC)
 
