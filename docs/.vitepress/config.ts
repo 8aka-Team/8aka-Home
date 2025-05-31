@@ -4,11 +4,18 @@ import MarkdownPreview from 'vite-plugin-markdown-preview'
 
 import { head, nav, sidebar } from './configs'
 
+const IS_CHINA_SITE = process.env.CHINA === 'true';
+const ICP_LICENSE = process.env.ICP_LICENSE;
+
+const icpHtml = IS_CHINA_SITE && ICP_LICENSE
+    ? ` | <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">${ICP_LICENSE}</a>`
+    : '';
+
 const APP_BASE_PATH = basename('')
 
 export default defineConfig({
   sitemap: {
-    hostname: 'https://www.8aka.org'
+    hostname: IS_CHINA_SITE ? 'https://www.8aka.cn' : 'https://www.8aka.org',
   },
 
 
@@ -46,8 +53,9 @@ export default defineConfig({
     socialLinks: [{ icon: 'github', link: 'https://github.com/postyizhan/postyizhan.github.io' }],
 
     footer: {
+
       message: '如有转载或 CV 的请标注本站原文地址',
-      copyright: 'Copyright © 2019-present maomao',
+      copyright: 'Copyright © 2019-present maomao' + icpHtml,
     },
 
     lastUpdated: {
@@ -74,7 +82,7 @@ export default defineConfig({
       badgeId: 'postyizhan.postyizhan.github.io',
     },
 
-    comment: {
+    comment: IS_CHINA_SITE ? undefined : {
       repo: '8aka-Team/8aka-Home',
       repoId: 'R_kgDOMf2LCQ',
       category: 'Announcements',
