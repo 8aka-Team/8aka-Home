@@ -10,9 +10,9 @@
 
 #### 驿站的Q群
 
-[611076407](https://qm.qq.com/q/vlOM8BVb1e)
+[874877925](https://qm.qq.com/q/ByconkxkZi)
 
-<img src="https://img.fastmirror.net/s/2024/08/06/66b1e9d38e8f8.jpg" width="200;" alt=""/>
+<img src="https://img.fastmirror.net/s/2025/08/14/689df06603f49.jpg" width="200;" alt=""/>
 
 #### 驿站的QQ
 
